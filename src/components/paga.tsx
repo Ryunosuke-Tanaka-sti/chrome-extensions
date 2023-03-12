@@ -1,7 +1,7 @@
 export const Page = () => {
   return (
     <>
-      <div className="text-left h-2 flex"></div>
+      <div className="flex h-2 text-left"></div>
     </>
   );
 };

@@ -1,35 +1,25 @@
-import { useState } from 'react';
-
-import './App.css';
-import reactLogo from './assets/react.svg';
-
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className="flex h-2 w-1 text-clip text-right font-sans hover:w-1">
-        Vite + React
-      </h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="inline-flex min-h-[200px] min-w-[300px] flex-col items-center justify-center gap-5 ">
+      <span className="inline-block w-full text-center text-lg font-thin">
+        猫ってかわいいよね。犬派だけど...
+      </span>
+      <button
+        className="h-12 w-1/2 rounded-lg border-2 border-blue-600 bg-blue-500 font-bold text-white hover:cursor-pointer"
+        onClick={() => {
+          window.open('https://tech-lab.sios.jp/');
+        }}
+      >
+        ブログ（Tech）
+      </button>
+      <button
+        className="h-12 w-1/2 rounded-lg border-2 border-blue-600 bg-blue-500 font-bold text-white hover:cursor-pointer"
+        onClick={() => {
+          window.open('https://tech-lab-engineer.sios.jp/log/');
+        }}
+      >
+        ブログ（日記）
+      </button>
     </div>
   );
 }
