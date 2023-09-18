@@ -9,13 +9,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@crxjs/vite-plugin": "^1.0.14",
+    "@crxjs/vite-plugin": "^2.0.0-beta.18",
+    "@extend-chrome/storage": "^1.5.0",
+    "@types/chrome": "^0.0.246",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.1",
+    "swr": "^2.2.2",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/uuid": "^9",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
     "@vitejs/plugin-react-swc": "^3.0.0",
