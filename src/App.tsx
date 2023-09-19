@@ -1,13 +1,15 @@
 import './App.css';
-import { InputForm } from './components/InputForm';
-import { ListColorPaletteList } from './components/ListColorPaletteList';
+import { InputForm } from './components/modules/InputForm';
+import { ListColorPaletteList } from './components/modules/ListColorPaletteList';
 
 function App() {
   return (
-    <main className="flex flex-col">
-      <InputForm />
-      <ListColorPaletteList />
-    </main>
+    <>
+      <main className="flex flex-col items-start gap-16 font-kosugi">
+        <InputForm />
+        <ListColorPaletteList />
+      </main>
+    </>
   );
 }
 
