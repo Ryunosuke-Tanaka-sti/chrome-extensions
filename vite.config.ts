@@ -11,12 +11,13 @@ const manifest = defineManifest({
     {
       js: ['src/contentScripts/script.ts'],
       matches: ['https://calendar.google.com/*'],
+      run_at: 'document_end',
     },
   ],
   side_panel: {
     default_path: 'index.html',
   },
-  permissions: ['storage', 'sidePanel'],
+  permissions: ['sidePanel', 'storage'],
 });
 // https://vitejs.dev/config/
 export default defineConfig({
